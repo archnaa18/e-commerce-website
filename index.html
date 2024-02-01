@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>TECHSOFTEDU</title>
 </head>
@@ -16,12 +18,15 @@
 
         <div class="navigation">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Contact</a></li>
+                <i class="fa-solid fa-xmark" id="close-icon"></i>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./course.html">Courses</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
+            <img src="./images/menu.png" alt="" class="menu-btn">
+
         </div>
     </nav>
     <!-- home -->
@@ -30,10 +35,10 @@
             Empowering Minds, Enabling Futures: Your Gateway to Cutting-Edge Online Education!</h2>
         <p>Revolutionizing education through innovation. Our technology-driven online platform offers a seamless
             learning experience, fostering knowledge, and shaping tomorrow's leaders</p>
-            <div class="button">
-                <a href="#" class="blue">Learn More</a>
-                <a href="#" class="yellow">Visit Courses</a>
-            </div>
+        <div class="button">
+            <a href="#" class="blue">Learn More</a>
+            <a href="#" class="yellow">Visit Courses</a>
+        </div>
     </section>
     <!-- features -->
     <section class="features" id="features">
@@ -186,21 +191,21 @@
                 </div>
                 <div class="date">
                     23<br>Hours
-                 </div>
-                 <div class="date">
+                </div>
+                <div class="date">
                     06 <br>Minutues
                 </div>
                 <div class="date">
                     58 <br>Seconds
                 </div>
             </div>
-          
+
         </div>
         <div class="form">
             <h3>Create Free Account Now!</h3>
-            <input type="text" placeholder="Name"id="" name="">
-            <input type="text" placeholder="Email Address"id="" name="">
-            <input type="text" placeholder="Phone Number"id="" name="">
+            <input type="text" placeholder="Name" id="" name="">
+            <input type="text" placeholder="Email Address" id="" name="">
+            <input type="text" placeholder="Phone Number" id="" name="">
             <div class="button">
                 <a href="#" class="yellow">Submit Form</a>
             </div>
@@ -213,56 +218,115 @@
         <div class="expert-box">
             <div class="profile">
                 <img src="./images/ex1.png" alt="">
-               <h6>Adarsh Singh</h6>
-               <p>JavaScript Expert</p>
-               <div class="pro-links">
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
+                <h6>Adarsh Singh</h6>
+                <p>JavaScript Expert</p>
+                <div class="pro-links">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
 
-                
-               </div>
+
+                </div>
             </div>
             <div class="profile">
                 <img src="./images/ex2.png" alt="">
-               <h6>Adarsh Singh</h6>
-               <p>JavaScript Expert</p>
-               <div class="pro-links">
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
+                <h6>Nikita Dutta</h6>
+                <p>SQL Expert</p>
+                <div class="pro-links">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
 
-                
-               </div>
+
+                </div>
             </div>
             <div class="profile">
                 <img src="./images/ex3.png" alt="">
-               <h6>Adarsh Singh</h6>
-               <p>JavaScript Expert</p>
-               <div class="pro-links">
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
+                <h6>Dinesh Pal</h6>
+                <p>Python Expert</p>
+                <div class="pro-links">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
 
-                
-               </div>
+
+                </div>
             </div>
             <div class="profile">
                 <img src="./images/ex4.png" alt="">
-               <h6>Adarsh Singh</h6>
-               <p>JavaScript Expert</p>
-               <div class="pro-links">
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
+                <h6>Rajat Mishra</h6>
+                <p>Java Expert</p>
+                <div class="pro-links">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
 
-                
-               </div>
+
+                </div>
             </div>
         </div>
 
 
     </section>
+    <footer>
+        <div class="footer-column">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Services</li>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investor Relations</li>
+            <li>Terms of Services</li>
+        </div>
+        <div class="footer-column">
+            <h3>Features</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Services</li>
+        </div>
+        <div class="footer-column">
+            <h3>Resources</h3>
+            <li>Guides</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Marketing Services</li>
+        </div>
+        <div class="footer-column">
+            <h3>Newsletter</h3>
+            <p>You can trust us.We only sends promo offer,</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email address">
+                <a href="#" class="yellow">SUBSCRIBE</a>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; 2024. All rights reserved | This Template is made by TECHSOFTEDU</p>
+            <div class="pro-links">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+
+
+            </div>
+        </div>
+
+
+    </footer>
+    <script>
+        $('.menu-btn').click(function () {
+            $(' nav .navigation ul').addClass('active')
+        });
+        $('#close-icon').click(function () {
+            $(' nav .navigation ul').removeClass('active')
+        });
+    </script>
 </body>
 
 </html>

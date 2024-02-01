@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>TECHSOFTEDU</title>
+</head>
+
+<body>
+    <!-- header -->
+    <nav>
+        <img src="./images/logo.png" alt="">
+
+        <div class="navigation">
+            <ul>
+                <i class="fa-solid fa-xmark" id="close-icon"></i>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html" class="active">About</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./course.html">Courses</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <img src="./images/menu.png" alt="" class="menu-btn">
+
+        </div>
+    </nav>
+    <!-- home -->
+    <section class="about-home" id="home">
+        <h2>About TECHSOFTEDU/
+        </h2>
+        <p> Empowering Minds, Enabling Futures - Your Journey to Knowledge and Success Begins Here!</p>
+    </section>
+    <!-- about container -->
+    <section class="about-container">
+        <div class="about-img">
+            <img src="./images/collage.png" alt="">
+
+        </div>
+        <div class="about-text">
+            <h2>Welcome to TECHSOFTEDU - Unleashing Potential, Transforming Lives</h2>
+            <P>At TECHSOFTEDU, we believe in the transformative power of education to shape minds
+                and elevate lives. Established with a passion for learning, our platform is a dynamic hub designed to
+                empower individuals on their educational journey.</P>
+            <div class="about-fe">
+                <img src="./images/f1.png" alt="">
+                <div class="fe-text">
+                    <h5>Our Vision</h5>
+                    <p>Driven by a vision of a globally connected learning community, we aspire to break down barriers
+                        to education, making knowledge accessible to all.</p>
+                </div>
+            </div>
+            <div class="about-fe">
+                <img src="./images/f2.png" alt="">
+                <div class="fe-text">
+                    <h5>Innovative Learning Solutions</h5>
+                    <p>Dedicated to providing cutting-edge educational resources, we offer a diverse range of courses
+                        curated by industry experts. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- features -->
+    <section class="features" id="features">
+        <h1>Awesome Features</h1>
+        <p>Unlock a World of Possibilities: Our Platform's Standout Features</p>
+        <div class="features-base">
+            <div class="fea-box">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Interactive Learning Environment</h3>
+                <p>Our platform brings textbooks to life with multimedia resources and dynamic content.</p>
+
+            </div>
+            <div class="fea-box">
+                <i class="fa-solid fa-file-import"></i>
+                <h3>Personalized Learning Paths</h3>
+                <p>Tailor your educational journey with personalized learning paths. </p>
+
+            </div>
+            <div class="fea-box">
+                <i class="fa-solid fa-award"></i>
+                <h3>Innovative Assessments</h3>
+                <p>Move beyond traditional assessments with our innovative evaluation methods.</p>
+
+            </div>
+        </div>
+    </section>
+      <!--Trust -->
+      <section class="trust">
+        <h2>Trusted By</h2>
+        <p>Empowering Thousands on Their Learning Journey</p>
+        <div class="trust-img">
+            <img src="./images/s1.png" alt="">
+            <img src="./images/s2.png" alt="">
+            <img src="./images/s3.png" alt="">
+            <img src="./images/s4.png" alt="">
+            <img src="./images/s5.png" alt="">
+            <img src="./images/s6.png" alt="">
+
+        </div>
+      </section>
+
+
+  <!-- footer -->
+    <footer>
+        <div class="footer-column">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Services</li>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investor Relations</li>
+            <li>Terms of Services</li>
+        </div>
+        <div class="footer-column">
+            <h3>Features</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Services</li>
+        </div>
+        <div class="footer-column">
+            <h3>Resources</h3>
+            <li>Guides</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Marketing Services</li>
+        </div>
+        <div class="footer-column">
+            <h3>Newsletter</h3>
+            <p>You can trust us.We only sends promo offer,</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email address">
+                <a href="#" class="yellow">SUBSCRIBE</a>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; 2024. All rights reserved | This Template is made by TECHSOFTEDU</p>
+            <div class="pro-links">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+
+
+            </div>
+        </div>
+
+
+    </footer>
+    <script>
+        $('.menu-btn').click(function () {
+            $(' nav .navigation ul').addClass('active')
+        });
+        $('#close-icon').click(function () {
+            $(' nav .navigation ul').removeClass('active')
+        });
+    </script>
+</body>
+
+</html>
