@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>TECHSOFTEDU</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <nav>
+      <img src="./images/logo.png" alt="" />
+
+      <div class="navigation">
+        <ul>
+          <i class="fa-solid fa-xmark" id="close-icon"></i>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./blog.html" class="active">Blog</a></li>
+          <li><a href="./course.html">Courses</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <img src="./images/menu.png" alt="" class="menu-btn" />
+      </div>
+    </nav>
+    <!-- home -->
+    <section class="about-home" id="home">
+      <h2>Blog TECHSOFTEDU/</h2>
+      <p>
+        Empowering Minds, Enabling Futures - Your Journey to Knowledge and
+        Success Begins Here!
+      </p>
+    </section>
+    <section id="blog-container" class="blog-container">
+      <div class="blogs">
+        <div class="post">
+          <img src="./images/b1.jpg" alt="" />
+          <h3>The Fundamentals: A Solid Foundation for Every Coder</h3>
+          <p>
+            Dive into the core concepts of programming. We'll explore the
+            fundamental building blocks such as variables, data types, and how
+            they lay the groundwork for writing effective and efficient code.
+            Learn the art of control flow. From if-else statements to loops,
+            grasp the logic that governs the execution of your code and gain
+            insights into creating dynamic and responsive programs.
+          </p>
+          <a href="./blog-details.html">Read More</a>
+        </div>
+        <div class="post">
+          <img src="./images/b2.jpg" alt="" />
+          <h3>Algorithmic Thinking: Solving Problems Like a Pro</h3>
+          <p>
+            Discover the power of algorithmic thinking. We'll guide you through
+            problem-solving strategies, breaking down complex issues into
+            manageable steps, and developing algorithms that form the backbone
+            of efficient solutions.Explore the concepts of time and space
+            complexity. Learn how to analyze the efficiency of your algorithms,
+            ensuring your code runs smoothly even as it handles larger datasets
+            and more complex tasks.
+          </p>
+          <a href="./blog-details.html">Read More</a>
+        </div>
+        <div class="post">
+          <img src="./images/b3.jpg" alt="" />
+          <h3>Version Control with Git: Collaboration Made Easy</h3>
+          <p>
+            Understand the importance of version control. Dive into Git, a tool
+            that not only tracks changes in your code but also facilitates
+            collaboration among developers. Learn basic commands, branching
+            strategies, and best practices.
+          </p>
+          <a href="./blog-details.html">Read More</a>
+        </div>
+        <div class="post">
+          <img src="./images/b41.jpg" alt="" />
+          <h3>Web Development Essentials: HTML, CSS, and JavaScript</h3>
+          <p>
+            Explore the trio of web development essentials: HTML for structure,
+            CSS for styling, and JavaScript for interactivity. We'll guide you
+            through building your first web page and adding dynamic elements to
+            create engaging user experiences.
+          </p>
+          <a href="./blog-details.html">Read More</a>
+        </div>
+      </div>
+      <div class="category">
+        <h2>Categories</h2>
+        <hr />
+        <a href="#">Web Development</a>
+        <hr />
+        <a href="#">Web Design</a>
+        <hr />
+        <a href="#">App Development</a>
+        <hr />
+        <a href="#">Front-End Development</a>
+        <hr />
+        <a href="#">Back-End Development</a>
+        <hr />
+        <a href="#">Database Developer</a>
+        <hr />
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-column">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Services</li>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <li>Jobs</li>
+        <li>Brand Assets</li>
+        <li>Investor Relations</li>
+        <li>Terms of Services</li>
+      </div>
+      <div class="footer-column">
+        <h3>Features</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Services</li>
+      </div>
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <li>Guides</li>
+        <li>Research</li>
+        <li>Experts</li>
+        <li>Marketing Services</li>
+      </div>
+      <div class="footer-column">
+        <h3>Newsletter</h3>
+        <p>You can trust us.We only sends promo offer,</p>
+        <div class="subscribe">
+          <input type="text" placeholder="Your Email address" />
+          <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &#169; 2024. All rights reserved | This Template is made by
+          TECHSOFTEDU
+        </p>
+        <div class="pro-links">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(".menu-btn").click(function () {
+        $(" nav .navigation ul").addClass("active");
+      });
+      $("#close-icon").click(function () {
+        $(" nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

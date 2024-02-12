@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>TECHSOFTEDU</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <nav>
+      <img src="./images/logo.png" alt="" />
+
+      <div class="navigation">
+        <ul>
+          <i class="fa-solid fa-xmark" id="close-icon"></i>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./blog.html" class="active">Blog</a></li>
+          <li><a href="./course.html">Courses</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <img src="./images/menu.png" alt="" class="menu-btn" />
+      </div>
+    </nav>
+    <!-- post -->
+    <section id="blog-container" class="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="./images/b1.jpg" alt="" />
+          <h3>The Fundamentals: A Solid Foundation for Every Coder</h3>
+          <p>
+            Dive into the core concepts of programming. We'll explore the
+            fundamental building blocks such as variables, data types, and how
+            they lay the groundwork for writing effective and efficient code.
+            Learn the art of control flow. From if-else statements to loops,
+            grasp the logic that governs the execution of your code and gain
+            insights into creating dynamic and responsive programs.
+          </p>
+         
+          <p>
+            In the vast landscape of coding, understanding the fundamentals is
+            akin to building a sturdy foundation for a skyscraper. These
+            foundational principles serve as the bedrock upon which every coder
+            constructs their digital masterpieces. At the core of this
+            foundation lies the concept of variables and data types, the
+            elemental building blocks that breathe life into code. Variables,
+            like the architects' blueprints, store and manage information, while
+            data types define the nature of this information, be it numbers,
+            text, or complex structures.
+          </p>
+          <p>
+            As we embark on this coding journey, the exploration of control flow
+            becomes essential—a journey into the logic that guides the execution
+            of our code. The if-else statements act as gatekeepers, determining
+            the course of action based on specified conditions. Loops, on the
+            other hand, are the repetitive beats orchestrating the rhythm of our
+            programs. Together, they imbue our code with flexibility and
+            responsiveness, transforming static scripts into dynamic solutions.
+          </p>
+          
+          <p>
+            Algorithmic thinking emerges as the maestro in this symphony of
+            code, guiding us through the process of problem-solving. Like an
+            artist breaking down a complex canvas into individual brushstrokes,
+            algorithmic thinking encourages us to decompose intricate problems
+            into manageable steps. This approach not only enhances our
+            problem-solving skills but also forms the backbone of efficient and
+            scalable solutions.
+          </p>
+          
+          <p class="last-p">
+            In the dynamic world of coding, continuous learning is key. Discover
+            strategies to stay updated with the latest technologies, frameworks,
+            and trends, ensuring your coding skills remain relevant and
+            in-demand. Embark on this journey into the heart of general
+            programming, where you'll not only learn the technical aspects but
+            also develop the mindset and skills needed to navigate the
+            ever-evolving landscape of coding. Happy coding!
+          </p>
+          <a href="./blog-details.html">Read Next ?</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-column">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Services</li>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <li>Jobs</li>
+        <li>Brand Assets</li>
+        <li>Investor Relations</li>
+        <li>Terms of Services</li>
+      </div>
+      <div class="footer-column">
+        <h3>Features</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Services</li>
+      </div>
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <li>Guides</li>
+        <li>Research</li>
+        <li>Experts</li>
+        <li>Marketing Services</li>
+      </div>
+      <div class="footer-column">
+        <h3>Newsletter</h3>
+        <p>You can trust us.We only sends promo offer,</p>
+        <div class="subscribe">
+          <input type="text" placeholder="Your Email address" />
+          <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &#169; 2024. All rights reserved | This Template is made by
+          TECHSOFTEDU
+        </p>
+        <div class="pro-links">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+    </footer>
+    <script>
+      $(".menu-btn").click(function () {
+        $(" nav .navigation ul").addClass("active");
+      });
+      $("#close-icon").click(function () {
+        $(" nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>
