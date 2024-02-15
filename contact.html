@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>TECHSOFTEDU</title>
+</head>
+
+<body>
+    <!-- header -->
+    <nav>
+        <img src="./images/logo.png" alt="" />
+
+        <div class="navigation">
+            <ul>
+                <i class="fa-solid fa-xmark" id="close-icon"></i>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./course.html">Courses</a></li>
+                <li><a href="./contact.html" class="active">Contact</a></li>
+            </ul>
+            <img src="./images/menu.png" alt="" class="menu-btn" />
+        </div>
+    </nav>
+    <!-- home -->
+    <section class="about-home" id="home">
+        <h2>Contact Us TECHSOFTEDU/</h2>
+        <!-- <p>Enroll Now for Tech Courses Online!</p> -->
+    </section>
+    <section id="contact" class="contact">
+        <div class="getin">
+            <h2>Get in Touch</h2>
+            <p>For any inquiries or assistance, please contact us through our Contact Us page. We value your feedback
+                and are here to provide swift and personalized support.</p>
+                <div class="getin-details">
+                    <h3>Headquarters</h3>
+                    <div>
+                        <i class="fa-solid fa-house get"></i>
+                        <p>6th Block, Rajajinagar, Bangalore,Karnatake-560010</p>
+                    </div>
+
+                    <h3>Phone</h3>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+91 8899887766 <br>
+                            +914455667788</p>
+                    </div>
+                    <h3>Support</h3>
+                    <div>
+                        <i class="fa-solid fa-envelope get"></i>
+                        <p>techedu@support.com <br>
+                        helptech@educa.com
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <div class="form">
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-column">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Services</li>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investor Relations</li>
+            <li>Terms of Services</li>
+        </div>
+        <div class="footer-column">
+            <h3>Features</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Services</li>
+        </div>
+        <div class="footer-column">
+            <h3>Resources</h3>
+            <li>Guides</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Marketing Services</li>
+        </div>
+        <div class="footer-column">
+            <h3>Newsletter</h3>
+            <p>You can trust us.We only sends promo offer,</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email address" />
+                <a href="#" class="yellow">SUBSCRIBE</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright &#169; 2024. All rights reserved | This Template is made by
+                TECHSOFTEDU
+            </p>
+            <div class="pro-links">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(".menu-btn").click(function () {
+            $(" nav .navigation ul").addClass("active");
+        });
+        $("#close-icon").click(function () {
+            $(" nav .navigation ul").removeClass("active");
+        });
+    </script>
+</body>
+
+</html>
